@@ -9,6 +9,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TranslationService } from './services/translation.service';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -28,9 +29,13 @@ import { TranslationService } from './services/translation.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  constructor(private i18n: TranslationService) {}
+  constructor(
+    private i18n: TranslationService,
+    private theme: ThemeService
+  ) {}
 
   ngOnInit(): void {
     this.i18n.init();
+    document.documentElement.setAttribute('data-theme', this.theme.theme());
   }
 }
