@@ -1,10 +1,11 @@
-<section class="about" id="about">
+<section id="about" class="section">
+  <span class="section-badge">{{ 'nav.about' | translate }}</span>
   <h2 class="section-title">{{ 'about.title' | translate }}</h2>
   <p class="about-text">{{ 'about.text' | translate }}</p>
 
   <div class="highlights-grid">
-    <div class="highlight-card" *ngFor="let item of highlights">
-      <mat-icon>check_circle</mat-icon>
+    <div class="card highlight-card" *ngFor="let item of highlights">
+      <span class="status-dot status-dot--cyan"></span>
       <span>{{ item }}</span>
     </div>
   </div>

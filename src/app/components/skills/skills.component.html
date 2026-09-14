@@ -1,15 +1,14 @@
 <section id="skills" class="section">
+  <span class="section-badge">{{ 'nav.skills' | translate }}</span>
   <h2 class="section-title">{{ 'skills.title' | translate }}</h2>
+  <p class="section-subtitle">{{ 'skills.subtitle' | translate }}</p>
+
   <div class="skills-grid">
-    <mat-card class="skill-card" *ngFor="let cat of skills">
-      <mat-card-header>
-        <mat-card-title>{{ cat.category }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <mat-chip-listbox aria-label="Skills">
-          <mat-chip *ngFor="let item of cat.items">{{ item }}</mat-chip>
-        </mat-chip-listbox>
-      </mat-card-content>
-    </mat-card>
+    <div class="card skill-card" *ngFor="let cat of skills">
+      <h3 class="skill-category">{{ cat.category }}</h3>
+      <div class="skill-items">
+        <span class="skill-chip" *ngFor="let item of cat.items">{{ item }}</span>
+      </div>
+    </div>
   </div>
 </section>

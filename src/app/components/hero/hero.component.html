@@ -1,8 +1,38 @@
 <section class="hero" id="hero">
   <div class="hero-content">
-    <h1 class="hero-name">{{ 'hero.name' | translate }}</h1>
+    <div class="status-badge">
+      <span class="status-dot status-dot--green"></span>
+      {{ 'hero.available' | translate }}
+    </div>
+
+    <h1 class="hero-name">
+      {{ 'hero.greeting' | translate }}
+      <span class="hero-name-highlight">{{ 'hero.name' | translate }}</span>
+    </h1>
+
     <p class="hero-title">{{ 'hero.title' | translate }}</p>
+
+    <div class="hero-roles">
+      <div class="hero-role">
+        <span class="status-dot status-dot--cyan"></span>
+        <div class="role-text">
+          <strong>{{ 'hero.role1' | translate }}</strong>
+          <span class="role-sub">{{ 'hero.role1Sub' | translate }}</span>
+        </div>
+      </div>
+      <div class="hero-role">
+        <span class="status-dot status-dot--cyan"></span>
+        <div class="role-text">
+          <strong>{{ 'hero.role2' | translate }}</strong>
+          <span class="role-sub">{{ 'hero.role2Sub' | translate }}</span>
+        </div>
+      </div>
+    </div>
+
     <p class="hero-tagline">{{ 'hero.tagline' | translate }}</p>
-    <button mat-raised-button color="accent" class="cta-button">{{ 'hero.cta' | translate }}</button>
+
+    <a href="#contact" class="cta-link">
+      <button mat-stroked-button class="cta-button">{{ 'hero.cta' | translate }}</button>
+    </a>
   </div>
 </section>
