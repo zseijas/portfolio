@@ -1,0 +1,60 @@
+<section id="contact" class="section">
+  <h2>{{ 'contact.title' | translate }}</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'contact.name' | translate }}</mat-label>
+      <input matInput formControlName="name" />
+      <mat-error *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">
+        {{ 'contact.required' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'contact.email' | translate }}</mat-label>
+      <input matInput formControlName="email" />
+      <mat-error *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">
+        {{ 'contact.required' | translate }}
+      </mat-error>
+      <mat-error *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">
+        {{ 'contact.emailInvalid' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'contact.message' | translate }}</mat-label>
+      <textarea matInput formControlName="message" rows="5"></textarea>
+      <mat-error *ngIf="form.get('message')?.hasError('required') && form.get('message')?.touched">
+        {{ 'contact.required' | translate }}
+      </mat-error>
+      <mat-error *ngIf="form.get('message')?.hasError('minlength') && form.get('message')?.touched">
+        {{ 'contact.minLength' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="form.invalid || sending()"
+    >
+      {{ sending() ? ('contact.sending' | translate) : ('contact.send' | translate) }}
+    </button>
+  </form>
+
+  <div class="status success" *ngIf="status() === 'sent'">
+    {{ 'contact.sent' | translate }}
+  </div>
+  <div class="status error" *ngIf="status() === 'error'">
+    {{ 'contact.error' | translate }}
+  </div>
+
+  <div class="socials">
+    <a href="https://github.com/zseijas" target="_blank" rel="noopener" class="social-link">
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/zaid-jose-seijas-borges/" target="_blank" rel="noopener" class="social-link">
+      LinkedIn
+    </a>
+  </div>
+</section>

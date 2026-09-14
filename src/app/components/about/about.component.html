@@ -1,0 +1,11 @@
+<section class="about" id="about">
+  <h2 class="section-title">{{ 'about.title' | translate }}</h2>
+  <p class="about-text">{{ 'about.text' | translate }}</p>
+
+  <div class="highlights-grid">
+    <div class="highlight-card" *ngFor="let item of highlights">
+      <mat-icon>check_circle</mat-icon>
+      <span>{{ item }}</span>
+    </div>
+  </div>
+</section>

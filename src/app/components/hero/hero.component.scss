@@ -1,0 +1,49 @@
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.1) 0%, rgba(103, 58, 183, 0.1) 100%);
+  padding: 2rem;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+}

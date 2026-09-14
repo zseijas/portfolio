@@ -1,0 +1,60 @@
+.section {
+  padding: 2rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  button {
+    align-self: flex-start;
+  }
+}
+
+.status {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+
+  &.success {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+  }
+
+  &.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+
+  .social-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

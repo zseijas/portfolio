@@ -1,0 +1,27 @@
+<section id="experience" class="section">
+  <h2 class="section-title">{{ 'experience.title' | translate }}</h2>
+
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let exp of experiences">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3 class="position">{{ exp.position }}</h3>
+        <p class="company">{{ exp.company }}</p>
+        <p class="meta">{{ exp.period }} · {{ exp.location }}</p>
+        <p class="description">{{ exp.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="subsection-title">{{ 'experience.education' | translate }}</h3>
+  <div class="education">
+    <p class="position">{{ education.program }}</p>
+    <p class="company">{{ education.institution }}</p>
+    <p class="meta">{{ education.period }}</p>
+  </div>
+
+  <h3 class="subsection-title">{{ 'experience.certs' | translate }}</h3>
+  <ul class="certs">
+    <li *ngFor="let cert of certifications">{{ cert }}</li>
+  </ul>
+</section>

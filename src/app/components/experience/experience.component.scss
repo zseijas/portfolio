@@ -1,0 +1,56 @@
+:host {
+  display: block;
+}
+
+.timeline {
+  border-left: 3px solid var(--accent-color, #3f51b5);
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: calc(-1.5rem - 9px);
+  top: 0.4rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--accent-color, #3f51b5);
+}
+
+.position {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.company {
+  margin: 0.15rem 0 0;
+  color: var(--accent-color, #3f51b5);
+}
+
+.meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.description {
+  margin: 0.5rem 0 0;
+}
+
+.subsection-title {
+  margin: 2.5rem 0 1rem;
+}
+
+.certs {
+  margin: 0;
+  padding-left: 1.25rem;
+}
