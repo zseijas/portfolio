@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "ng build --configuration production",
+  "outputDirectory": "dist/portfolio/browser",
+  "installCommand": "npm install",
+  "framework": "angular"
+}
