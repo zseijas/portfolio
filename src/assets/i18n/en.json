@@ -12,7 +12,7 @@
   "hero.role1Sub": "SIGIS · Caracas · 2024 - present",
   "hero.role2": "Full-Stack Developer",
   "hero.role2Sub": "Angular · Node.js · Docker · Kubernetes",
-  "hero.tagline": "I build robust, scalable, and efficient systems. Full-stack development combined with automation and modern infrastructure.",
+  "hero.tagline": "I build robust, scalable, and efficient systems. Full-stack development combined with automation, modern infrastructure, and AI to optimize development speed.",
   "hero.cta": "Contact me",
   "about.title": "About me",
   "about.text": "Full-stack developer with a DevOps focus. I design and implement CI/CD pipelines, orchestrate containers with Kubernetes, and dockerize applications. I participate in the full cycle: architecture, backend, and frontend interfaces. My hybrid approach ensures software runs in production with speed, quality, and resilience.",
