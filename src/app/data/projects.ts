@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'SMSYA WebAdmin',
     description: 'Panel web para plataforma de mensajería SMS masiva: gestión de campañas, envíos y reportes.',
-    techs: ['Angular', 'TypeScript', 'Node.js', 'MySQL']
+    techs: ['Angular', 'TypeScript', 'PostgREST']
   },
   {
     name: 'SMSYA Jasmin Gateway',
@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Athenium WebAdmin',
     description: 'Aplicación web administrativa con dashboards y gestión en tiempo real para plataforma de mercados criptoactivos.',
-    techs: ['Angular', 'TypeScript', 'PostgreSQL']
+    techs: ['Angular', 'TypeScript', 'PostgREST']
   },
   {
     name: 'GTR Administrativo',
@@ -45,5 +45,10 @@ export const PROJECTS: Project[] = [
     name: 'GTR Seguimiento API',
     description: 'API REST Node.js para seguimiento y trazabilidad operativa.',
     techs: ['Node.js', 'PostgreSQL', 'Docker']
+  },
+   {
+    name: 'Aplicación de Movilidad Lynnk One',
+    description: 'Aplicación móvil basada en servicios de transporte y gestión de taxis estilo Uber.',
+    techs: ['Ionic', 'MySQL']
   }
 ];
