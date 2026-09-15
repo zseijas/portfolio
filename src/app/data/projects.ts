@@ -12,17 +12,17 @@ export const PROJECTS: Project[] = [
     techs: ['Python', 'Jasmin', 'Docker']
   },
   {
-    name: 'MCP Server SMSya',
+    name: 'MCP Server SMSYA',
     description: 'Servidor Model Context Protocol que integra LLMs con la plataforma SMSya para soporte al cliente, administración del gateway SMS, monitoreo operacional y auto-remediación de incidentes.',
     techs: ['Python', 'MCP']
   },
   {
-    name: 'smsya-database',
+    name: 'SMSYA Database',
     description: 'Herramienta para mantener los cambios en la base de datos de la plataforma SMSya.',
     techs: ['PostgreSQL', 'PostgREST', 'Jenkins']
   },
   {
-    name: 'SMSYa Gateway JWT',
+    name: 'SMSYA Gateway JWT',
     description: 'API Gateway seguro con autenticación JWT para Jasmin SMS Gateway. Proxy inverso autenticado hacia la API HTTP de Jasmin con endpoints adicionales para balance, health checks y mensajería multicanal (Telegram, WhatsApp, Email).',
     techs: ['FastAPI', 'JWT', 'Jasmin', 'Docker']
   },
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Athenium WebAdmin',
-    description: 'Aplicación web administrativa con dashboards y gestión en tiempo real para plataforma de mercados.',
+    description: 'Aplicación web administrativa con dashboards y gestión en tiempo real para plataforma de mercados criptoactivos.',
     techs: ['Angular', 'TypeScript', 'PostgreSQL']
   },
   {
