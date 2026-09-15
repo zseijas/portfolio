@@ -3,6 +3,9 @@
   <span class="spacer"></span>
   <nav class="links">
     <a mat-button *ngFor="let link of links" [href]="'#' + link.fragment">{{ link.key | translate }}</a>
+    <button mat-button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="'Toggle theme'">
+      {{ themeService.theme() === 'dark' ? '☀️' : '🌙' }}
+    </button>
     <button mat-button class="lang-toggle" (click)="toggleLang()">{{ i18n.lang() === 'es' ? 'EN' : 'ES' }}</button>
   </nav>
 </mat-toolbar>

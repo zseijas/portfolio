@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { TranslationService } from '../../services/translation.service';
+import { ThemeService } from '../../services/theme.service';
 
 interface NavLink {
   key: string;
@@ -26,9 +27,16 @@ export class NavbarComponent {
     { key: 'nav.contact', fragment: 'contact' }
   ];
 
-  constructor(readonly i18n: TranslationService) {}
+  constructor(
+    readonly i18n: TranslationService,
+    readonly themeService: ThemeService
+  ) {}
 
   toggleLang(): void {
     this.i18n.toggle();
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggle();
   }
 }

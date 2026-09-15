@@ -9,9 +9,14 @@
   right: 0;
   z-index: 100;
   backdrop-filter: blur(12px);
-  background: rgba(26, 26, 46, 0.92) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--navbar-bg) !important;
+  color: var(--navbar-text) !important;
+  --mdc-toolbar-container-color: var(--navbar-bg);
+  --mat-toolbar-container-background-color: var(--navbar-bg);
+  --mat-toolbar-container-text-color: var(--navbar-text);
+  border-bottom: 1px solid var(--navbar-border);
   padding: 0 2rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
 
   @media (max-width: 720px) {
     padding: 0 1rem;
@@ -26,7 +31,7 @@
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
-  background: linear-gradient(90deg, #fff, #b3c5ff);
+  background: linear-gradient(90deg, var(--text-primary), var(--accent-cyan));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -39,7 +44,7 @@
 }
 
 .links a {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: var(--navbar-text) !important;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.2px;
@@ -59,7 +64,7 @@
   }
 
   &:hover {
-    color: #fff !important;
+    color: var(--navbar-text-hover) !important;
 
     &::after {
       width: 60%;
@@ -67,11 +72,27 @@
   }
 }
 
-.lang-toggle {
-  margin-left: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+.theme-toggle {
+  border: 1px solid var(--navbar-border) !important;
   border-radius: 6px !important;
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: var(--navbar-text) !important;
+  min-width: 40px;
+  padding: 0 0.5rem !important;
+  font-size: 1.1rem !important;
+  line-height: 1;
+  transition: var(--transition);
+
+  &:hover {
+    background: var(--bg-card-hover) !important;
+    border-color: var(--accent-cyan) !important;
+  }
+}
+
+.lang-toggle {
+  margin-left: 0.5rem;
+  border: 1px solid var(--navbar-border) !important;
+  border-radius: 6px !important;
+  color: var(--navbar-text) !important;
   font-weight: 600 !important;
   font-size: 0.8rem !important;
   letter-spacing: 1px;
@@ -79,13 +100,13 @@
   transition: var(--transition);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
+    background: var(--bg-card-hover) !important;
+    border-color: var(--accent-cyan) !important;
   }
 }
 
 @media (max-width: 720px) {
-  .links a:not(.lang-toggle) {
+  .links a:not(.lang-toggle):not(.theme-toggle) {
     display: none;
   }
 }

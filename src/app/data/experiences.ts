@@ -35,6 +35,34 @@ export const EXPERIENCES: Experience[] = [
     period: 'mar. 2019 - may. 2020',
     location: 'Caracas, Distrito Federal, Venezuela',
     description: 'Fullstack HTML, Bootstrap, PostgreSQL, Leaflet, JavaScript, jQuery. Plataforma de reportes e indicadores de gestión en rastreo vehicular (flotas).'
+  },
+  {
+    company: 'SomosTech',
+    position: 'Desarrollador de aplicaciones para móviles',
+    period: 'sept. 2018 - feb. 2019',
+    location: 'Colombia (remoto)',
+    description: 'Desarrollo Jr. de aplicaciones móviles con Ionic, MySQL. Plataforma estilo Uber de transporte de pasajeros "Lynnk One" para empresa colombiana.'
+  },
+  {
+    company: 'Isarq',
+    position: 'Desarrollador de software fullstack',
+    period: 'sept. 2016 - sept. 2018',
+    location: 'Caracas, Distrito Federal, Venezuela',
+    description: 'Fullstack Angular, Bootstrap, Python, Oracle. Desarrollo de plataforma de banca en línea para Banco Bicentenario del Pueblo.'
+  },
+  {
+    company: 'FUNDELEC',
+    position: 'Programador informático',
+    period: 'mar. 2016 - sept. 2016',
+    location: 'Caracas, Distrito Federal, Venezuela',
+    description: 'Fullstack PHP, HTML, CSS, PostgreSQL. Desarrollo de sistemas web para gestión de equipos eléctricos.'
+  },
+  {
+    company: 'Alcaldía Municipio Libertador',
+    position: 'Programador Jr.',
+    period: 'abr. 2014 - mar. 2016',
+    location: 'Caracas, Distrito Federal, Venezuela',
+    description: 'Fullstack PHP, HTML, CSS, PostgreSQL. Desarrollo de sistemas web administrativos internos.'
   }
 ];
 
@@ -45,10 +73,10 @@ export const EDUCATION = {
 };
 
 export const CERTIFICATIONS = [
+  'Introduction to DevOps Course (Codecademy, 2026)',
+  'Fundamentos profesionales del análisis de datos (Microsoft, 2026)',
   'Data Analytics: Ampliación y aplicación (LinkedIn, 2024)',
   'Data Analytics: Fundamentos (LinkedIn, 2024)',
-  'Fundamentos profesionales del análisis de datos (Microsoft, 2024)',
-  'Introduction to DevOps Course (Codecademy, 2026)',
   'Data Science: Conceptos básicos (LinkedIn, 2024)',
   'Data Storytelling (LinkedIn, 2024)'
 ];

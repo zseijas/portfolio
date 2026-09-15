@@ -1,4 +1,4 @@
-/* Global professional design system — dark theme */
+/* Global professional design system — dark theme (default) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -16,6 +16,39 @@
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   --radius: 16px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* theme-specific surfaces */
+  --navbar-bg: rgba(26, 26, 46, 0.92);
+  --navbar-text: rgba(255, 255, 255, 0.75);
+  --navbar-text-hover: #ffffff;
+  --navbar-border: rgba(255, 255, 255, 0.08);
+  --hero-name-color: #ffffff;
+  --hero-gradient: radial-gradient(ellipse 800px 600px at 70% 30%, rgba(34, 211, 238, 0.08) 0%, transparent 70%),
+                   radial-gradient(ellipse 600px 500px at 20% 80%, rgba(74, 222, 128, 0.05) 0%, transparent 70%),
+                   #0a0a0f;
+}
+
+/* Light theme */
+html[data-theme='light'] {
+  --bg-primary: #f6f7fb;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f4ff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a68;
+  --text-muted: #8a8aa5;
+  --accent-cyan: #0891b2;
+  --accent-green: #16a34a;
+  --accent-blue: #2563eb;
+  --border: #e2e4f0;
+  --shadow: 0 8px 32px rgba(26, 26, 46, 0.08);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --navbar-text: rgba(26, 26, 46, 0.75);
+  --navbar-text-hover: #1a1a2e;
+  --navbar-border: rgba(26, 26, 46, 0.08);
+  --hero-name-color: #1a1a2e;
+  --hero-gradient: radial-gradient(ellipse 800px 600px at 70% 30%, rgba(34, 211, 238, 0.12) 0%, transparent 70%),
+                   radial-gradient(ellipse 600px 500px at 20% 80%, rgba(74, 222, 128, 0.08) 0%, transparent 70%),
+                   #f6f7fb;
 }
 
 html, body {
@@ -36,7 +69,7 @@ body {
 
 /* Section wrapper */
 section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   scroll-margin-top: 72px;
