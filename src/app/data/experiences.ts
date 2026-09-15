@@ -73,10 +73,10 @@ export const EDUCATION = {
 };
 
 export const CERTIFICATIONS = [
+  'Introduction to DevOps Course (Codecademy, 2026)',
+  'Fundamentos profesionales del análisis de datos (Microsoft, 2026)',
   'Data Analytics: Ampliación y aplicación (LinkedIn, 2024)',
   'Data Analytics: Fundamentos (LinkedIn, 2024)',
-  'Fundamentos profesionales del análisis de datos (Microsoft, 2024)',
-  'Introduction to DevOps Course (Codecademy, 2026)',
   'Data Science: Conceptos básicos (LinkedIn, 2024)',
   'Data Storytelling (LinkedIn, 2024)'
 ];
