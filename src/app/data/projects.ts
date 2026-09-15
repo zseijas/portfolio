@@ -30,5 +30,20 @@ export const PROJECTS: Project[] = [
     name: 'GTR Seguimiento API',
     description: 'API REST Node.js para seguimiento y trazabilidad operativa.',
     techs: ['Node.js', 'PostgreSQL', 'Docker']
+  },
+  {
+    name: 'MCP Server SMSya',
+    description: 'Servidor Model Context Protocol que integra LLMs con la plataforma SMSya para soporte al cliente, administración del gateway SMS, monitoreo operacional y auto-remediación de incidentes.',
+    techs: ['Python', 'MCP']
+  },
+  {
+    name: 'smsya-database',
+    description: 'Herramienta para mantener los cambios en la base de datos de la plataforma SMSya.',
+    techs: ['PostgreSQL', 'PostgREST', 'Jenkins']
+  },
+  {
+    name: 'SMSYa Gateway JWT',
+    description: 'API Gateway seguro con autenticación JWT para Jasmin SMS Gateway. Proxy inverso autenticado hacia la API HTTP de Jasmin con endpoints adicionales para balance, health checks y mensajería multicanal (Telegram, WhatsApp, Email).',
+    techs: ['FastAPI', 'JWT', 'Jasmin', 'Docker']
   }
 ];
