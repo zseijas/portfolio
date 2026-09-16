@@ -100,6 +100,12 @@
   max-width: 580px;
 }
 
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .cta-link {
   text-decoration: none;
 }
@@ -109,12 +115,24 @@
   font-size: 0.95rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.3px;
+  border-radius: 999px !important;
+}
+
+.cta-button--primary {
   color: var(--accent-cyan) !important;
   border-color: var(--accent-cyan) !important;
-  border-radius: 999px !important;
 
   &:hover {
     background: rgba(34, 211, 238, 0.1) !important;
+  }
+}
+
+.cta-button--secondary {
+  color: var(--text-secondary) !important;
+  border-color: var(--border) !important;
+
+  &:hover {
+    background: var(--bg-secondary) !important;
   }
 }
 
