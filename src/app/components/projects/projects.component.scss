@@ -23,29 +23,16 @@
   letter-spacing: -0.3px;
 }
 
-.project-section {
-  margin: 0 0 1.5rem;
-
-  &:last-of-type {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.project-section-title {
-  margin: 0 0 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--accent-cyan);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
 .project-section-text {
-  margin: 0;
+  margin: 0 0 0.85rem;
   color: var(--text-secondary);
   line-height: 1.6;
   font-size: 0.9rem;
   flex: 1;
+
+  &:last-of-type {
+    margin-bottom: 1.25rem;
+  }
 }
 
 .project-techs {

@@ -7,20 +7,9 @@
     <div class="card project-card" *ngFor="let project of projects">
       <h3 class="project-name">{{ project.name }}</h3>
 
-      <div class="project-section">
-        <h4 class="project-section-title">{{ 'projects.challenge' | translate }}</h4>
-        <p class="project-section-text">{{ project.challenge }}</p>
-      </div>
-
-      <div class="project-section">
-        <h4 class="project-section-title">{{ 'projects.solution' | translate }}</h4>
-        <p class="project-section-text">{{ project.solution }}</p>
-      </div>
-
-      <div class="project-section">
-        <h4 class="project-section-title">{{ 'projects.impact' | translate }}</h4>
-        <p class="project-section-text">{{ project.impact }}</p>
-      </div>
+      <p class="project-section-text">{{ project.challenge }}</p>
+      <p class="project-section-text">{{ project.solution }}</p>
+      <p class="project-section-text">{{ project.impact }}</p>
 
       <div class="project-techs">
         <span class="tech-chip" *ngFor="let tech of project.techs">{{ tech }}</span>
