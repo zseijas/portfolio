@@ -1,10 +1,10 @@
 <section id="experience" class="section">
   <span class="section-badge">{{ 'nav.experience' | translate }}</span>
-  <h2 class="section-title">{{ 'experience.title' | translate }}</h2>
-  <p class="section-subtitle">{{ 'experience.subtitle' | translate }}</p>
+  <h2 class="section-title" appFadeInUp>{{ 'experience.title' | translate }}</h2>
+  <p class="section-subtitle" appFadeInUp>{{ 'experience.subtitle' | translate }}</p>
 
   <div class="timeline">
-    <div class="card timeline-item" *ngFor="let exp of experiences">
+    <div class="card timeline-item" appFadeInUp *ngFor="let exp of experiences">
       <div class="timeline-marker"></div>
       <div class="timeline-content">
         <h3 class="position">{{ exp.position }}</h3>

@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import * as emailjs from '@emailjs/browser';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { FadeInUpDirective } from '../../directives/fade-in-up.directive';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -18,6 +19,7 @@ import { environment } from '../../../environments/environment';
     MatInputModule,
     MatButtonModule,
     TranslatePipe,
+    FadeInUpDirective,
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
