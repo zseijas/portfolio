@@ -37,6 +37,11 @@
   font-weight: 500;
   color: var(--text-secondary);
   transition: var(--transition);
+  cursor: default;
+
+  &:hover {
+    transform: scale(1.05) translateY(-2px);
+  }
 
   &:hover {
     border-color: var(--accent-cyan);

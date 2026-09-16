@@ -51,4 +51,10 @@
   font-weight: 500;
   color: var(--accent-cyan);
   letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    transform: scale(1.05) translateY(-2px);
+  }
 }
