@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { FadeInUpDirective } from '../../directives/fade-in-up.directive';
 import { PROJECTS } from '../../data/projects';
 import { Project } from '../../data/project.model';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, FadeInUpDirective],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

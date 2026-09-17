@@ -1,10 +1,10 @@
 <section id="skills" class="section">
   <span class="section-badge">{{ 'nav.skills' | translate }}</span>
-  <h2 class="section-title">{{ 'skills.title' | translate }}</h2>
-  <p class="section-subtitle">{{ 'skills.subtitle' | translate }}</p>
+  <h2 class="section-title" appFadeInUp>{{ 'skills.title' | translate }}</h2>
+  <p class="section-subtitle" appFadeInUp>{{ 'skills.subtitle' | translate }}</p>
 
   <div class="skills-grid">
-    <div class="card skill-card" *ngFor="let cat of skills">
+    <div class="card skill-card" appFadeInUp *ngFor="let cat of skills">
       <h3 class="skill-category">{{ cat.category }}</h3>
       <div class="skill-items">
         <span class="skill-chip" *ngFor="let item of cat.items">{{ item }}</span>

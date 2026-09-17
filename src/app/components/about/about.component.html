@@ -1,10 +1,10 @@
 <section id="about" class="section">
   <span class="section-badge">{{ 'nav.about' | translate }}</span>
-  <h2 class="section-title">{{ 'about.title' | translate }}</h2>
-  <p class="about-text">{{ 'about.text' | translate }}</p>
+  <h2 class="section-title" appFadeInUp>{{ 'about.title' | translate }}</h2>
+  <p class="about-text" appFadeInUp>{{ 'about.text' | translate }}</p>
 
   <div class="highlights-grid">
-    <div class="card highlight-card" *ngFor="let item of highlights">
+    <div class="card highlight-card" appFadeInUp *ngFor="let item of highlights">
       <span class="status-dot status-dot--cyan"></span>
       <span>{{ item }}</span>
     </div>

@@ -1,12 +1,16 @@
 <section id="projects" class="section">
   <span class="section-badge">{{ 'nav.projects' | translate }}</span>
-  <h2 class="section-title">{{ 'projects.title' | translate }}</h2>
-  <p class="section-subtitle">{{ 'projects.subtitle' | translate }}</p>
+  <h2 class="section-title" appFadeInUp>{{ 'projects.title' | translate }}</h2>
+  <p class="section-subtitle" appFadeInUp>{{ 'projects.subtitle' | translate }}</p>
 
   <div class="projects-grid">
-    <div class="card project-card" *ngFor="let project of projects">
+    <div class="card project-card" appFadeInUp *ngFor="let project of projects">
       <h3 class="project-name">{{ project.name }}</h3>
-      <p class="project-description">{{ project.description }}</p>
+
+      <p class="project-section-text">{{ project.challenge }}</p>
+      <p class="project-section-text">{{ project.solution }}</p>
+      <p class="project-section-text">{{ project.impact }}</p>
+
       <div class="project-techs">
         <span class="tech-chip" *ngFor="let tech of project.techs">{{ tech }}</span>
       </div>

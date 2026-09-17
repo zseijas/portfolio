@@ -31,8 +31,13 @@
 
     <p class="hero-tagline">{{ 'hero.tagline' | translate }}</p>
 
-    <a href="#contact" class="cta-link">
-      <button mat-stroked-button class="cta-button">{{ 'hero.cta' | translate }}</button>
-    </a>
+    <div class="cta-group">
+      <a href="#contact" class="cta-link">
+        <button mat-stroked-button class="cta-button cta-button--primary">{{ 'hero.cta' | translate }}</button>
+      </a>
+      <a href="#projects" class="cta-link">
+        <button mat-stroked-button class="cta-button cta-button--secondary">{{ 'hero.ctaSecondary' | translate }}</button>
+      </a>
+    </div>
   </div>
 </section>

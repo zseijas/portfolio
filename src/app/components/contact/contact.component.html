@@ -1,7 +1,7 @@
 <section id="contact" class="section">
   <span class="section-badge">{{ 'nav.contact' | translate }}</span>
-  <h2 class="section-title">{{ 'contact.title' | translate }}</h2>
-  <p class="section-subtitle">{{ 'contact.subtitle' | translate }}</p>
+  <h2 class="section-title" appFadeInUp>{{ 'contact.title' | translate }}</h2>
+  <p class="section-subtitle" appFadeInUp>{{ 'contact.subtitle' | translate }}</p>
 
   <div class="contact-layout">
     <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
